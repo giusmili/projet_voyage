@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 html{
     font-size: 62.5%;
+    background: #000 url(../asset/globe.png)no-repeat fixed center center / cover;
     
 }
 body{
@@ -13,6 +14,23 @@ p, figure, h1, h2, h3, h4, ul, ol{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: #222;
+}
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .8rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 254, 251);
+    outline: .1rem solid rgb(22, 22, 22);
+}
 
 /* theme */
 :root{
@@ -20,6 +38,13 @@ p, figure, h1, h2, h3, h4, ul, ol{
     --color-primary: rgb(68, 68, 202);
     --color-warning: rgb(168, 38, 38);
     --color-success: rgb(12, 117, 12);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1rem;
 }
 header h1{
     line-height: 6rem;
@@ -32,13 +57,20 @@ header h1{
 header h1 img{
     filter:invert(100%);
 }
+main{
+    margin-top: 8rem;
+}
 figure{
     max-width: 60rem;
     margin: 0 auto 2rem;
     border: .1rem #ccc solid;
     padding: 1rem;
-    background-color: #fafafafa;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
     
+}
+figure a{
+    display: block;
 }
 figure img{
     display: block;
@@ -78,12 +110,16 @@ footer *{
         margin-bottom: .1rem;
         font-size: large;
     }
+    main{
+        margin-top: 6rem;
+    }
     figcaption h2{
         font-size: large; 
     }
     figure{
         margin-bottom: .1rem;
         border-bottom: 0;
+        box-shadow: none;
     }
     footer{
         min-height: 50vh;
