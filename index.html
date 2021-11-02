@@ -18,20 +18,24 @@
         <h1><span class="material-icons" aria-hidden="true">mode</span> Les grandes villes des &Eacute;tas Unis - 2021</h1>
     </header>
     <main>
-        <figure>
+        <figure itemscope itemtype="https://schema.org/AggregateRating" itemref="vote_2 vote_3">
             <img src="./asset/ny_edited.jpg" alt="ville de New York">
                 <figcaption>
                     <h2>Ville de New york</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Exercitationem modi consectetur voluptatum ratione tempora illum eos! 
                         Consectetur obcaecati eligendi velit ratione delectus, perspiciatis vero saepe.</p>
-                        
-                   <img src="/asset/thumbs-up.svg" alt="vote" role="button" tabindex="0"><span class="vote">0</span>
+                     <button aria-label="like">
+                     	<span class="material-icons" aria-hidden="true">
+								thumb_up
+						</span>
+					</button> 
+                    <span class="vote" itemprop="reviewCount">0</span>
                   
                 </figcaption>
             
         </figure>
-        <figure>
+        <figure id="vote_2">
             <img src="https://cdn.getyourguide.com/img/location/533597d7653a9.jpeg/88.jpg" alt="ville de Boston">
                 <figcaption>
                     <h2>Ville de Boston</h2>
@@ -39,12 +43,17 @@
                         Exercitationem modi consectetur voluptatum ratione tempora illum eos! 
                         Consectetur obcaecati eligendi velit ratione delectus, perspiciatis vero saepe.</p>
                      
-                            <img src="/asset/thumbs-up.svg" alt="vote"><span class="vote">0</span>
+                         <button aria-label="like">
+                     	<span class="material-icons" aria-hidden="true">
+								thumb_up
+						</span>
+					</button> 
+                    <span class="vote" itemprop="reviewCount">0</span>
                       
                 </figcaption>
             
         </figure>
-        <figure>
+        <figure  id="vote_3">
             <img src="./asset/san-francisco.jpg" alt="ville de NY">
                 <figcaption>
                     <h2>Ville de San Francisco</h2>
@@ -52,15 +61,22 @@
                         Exercitationem modi consectetur voluptatum ratione tempora illum eos! 
                         Consectetur obcaecati eligendi velit ratione delectus, perspiciatis vero saepe.</p>
                        
-                            <img src="/asset/thumbs-up.svg" alt="vote"><span class="vote">0</span>
+                     <button aria-label="like">
+                     	<span class="material-icons" aria-hidden="true">
+								thumb_up
+						</span>
+					</button> 
+                    <span class="vote" itemprop="reviewCount">0</span>
 
                 </figcaption>
             
         </figure>
     </main>
+    <!--<aside></aside>-->
     <!--non semantique-->
     <!--<div class="aside" role="complementary" aria-labelledby="content">
         <p id="content">C'est prafait pour le SEO</p>
+        https://www.youtube.com/watch?v=SMA-JDHSLEw
     </div>-->
     <footer>
         <p>&copy; MIT - </p>

@@ -18,6 +18,10 @@ a{
     text-decoration: none;
     color: #222;
 }
+button{
+    border: 0;
+    background: none;
+}
 /* scroll bars */
 *{
     /* For FF and non-webkit browsers */
@@ -44,7 +48,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1rem;
+    z-index: 2;
+    
 }
 header h1{
     line-height: 6rem;
@@ -53,6 +58,7 @@ header h1{
     background-color: var(--color-default);
     color: #fafafa;
     font-weight: 200;
+    box-shadow: 0 0 5rem #fafafa;
 }
 header h1 img{
     filter:invert(100%);
@@ -61,6 +67,7 @@ main{
     margin-top: 8rem;
 }
 figure{
+    
     max-width: 60rem;
     margin: 0 auto 2rem;
     border: .1rem #ccc solid;
@@ -93,10 +100,9 @@ figcaption p{
     line-height: 2.5rem;
     text-align: justify;
 }
-figcaption img{
+figcaption img, figcaption button{
     display: inline-block;
-    vertical-align: -.2rem;
-    margin-right: .3rem;
+    vertical-align: -.4rem;
     cursor: pointer;
 }
 footer *{
@@ -117,9 +123,14 @@ footer *{
         font-size: large; 
     }
     figure{
+        position: sticky;
+        top: 0;
         margin-bottom: .1rem;
         border-bottom: 0;
         box-shadow: none;
+        background-color: rgba(255,255,255,1);
+        z-index: 1;
+        
     }
     footer{
         min-height: 50vh;
