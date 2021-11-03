@@ -64,17 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
     /*city.forEach((el, key) => {
         console.log(key+' '+el.title)
     });*/
-    let ref = document.querySelector("aside");
-    let ellist = document.createElement("ul");
 
-    let liste = document.querySelector("aside ul");
-    ref.appendChild(ellist);
-    for (data of city) {
-        console.log(data.title);
-        let liste = document.querySelector("aside ul");
-        liste.innerHTML += `<li>${data.title}</li>
-                            <li><img src="${data.photo}" alt="${data.alt}"></li>
-                            <li>${data.content}</li>
-                            `;
-    }
+    /*let ref = document.querySelector("aside")
+    let ellist = document.createElement("ul")
+    ref.appendChild(ellist)
+    let liste = document.querySelector("aside ul")
+    
+    for(data of city){
+        console.log(data.title)
+    let liste = document.querySelector("aside ul")
+    liste.innerHTML += `<li>${data.title}</li>
+                        <li><img src="${data.photo}" alt="${data.alt}"></li>
+                        <li>${data.content}</li>
+                        `
+    }*/
 });

@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         /*let ref = document.querySelector("aside")
         let ellist = document.createElement("ul")
-
-        let liste = document.querySelector("aside ul")
         ref.appendChild(ellist)
+        let liste = document.querySelector("aside ul")
+        
         for(data of city){
             console.log(data.title)
         let liste = document.querySelector("aside ul")

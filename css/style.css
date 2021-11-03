@@ -89,7 +89,7 @@ figure figcaption h2{
     font-weight: 200;
 }
 figure figcaption h2::before{
-    content: url(../asset/award.svg);
+    content: url(../asset/award.svg) /*/ "logo"*/;
 }
 figure:last-child h2::before{
     content: "\2764";
@@ -111,7 +111,7 @@ footer *{
 }
 
 /* media queris */
-@media screen and (max-width: 60rem){
+@media screen and (max-width: 60rem){ /* min-width */
     header h1{
         margin-bottom: .1rem;
         font-size: large;
