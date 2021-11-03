@@ -1,8 +1,8 @@
 # Projet: Les villes américaines
 Optimisation d'une page web avec des informations à collecter :
-* schema.org
+* [schema.org](https://schema.org/)
 * sémantique de base
-* Open graph
+* [Open graph](https://ogp.me/)
 * Manifeste html<sup>5</sup>. Exemple:
 ```js
 {
